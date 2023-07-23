@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    height: 100%;
     box-sizing: border-box;
 }
 
@@ -285,19 +286,29 @@ html {
 
 /* Css home page */
 .main {
+    height: 100%;
     background: url('../img/background3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
 }
 
 .main__header {
     display: flex;
+    height: 166px;
     justify-content: space-between;
 }
 
+.main__header-logo {
+    width: 80px;
+}
+
+
 .main__header-logo-img {
     width: 150px;
+}
+
+.main__header-navbar {
+    height: 90px;
 }
 
 .main__header-navbar-list {
@@ -352,8 +363,9 @@ html {
 .main__body {
     display: flex;
     align-items: center;
+    margin-top: 100px;
     justify-content: space-around;
-    height: 400px;
+    height: 200px;
 }
 
 .main__body-target {
@@ -377,13 +389,17 @@ html {
 }
 
 .main__footer {
-    text-align: center;
+    height: 200px;
     color: #fff;
-    height: 191px;
+    position: relative;
 }
 
 .main__footer-text {
-    padding-top: 70px;
+    position: absolute;
+    height: 30px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
     font-size: 26px;
 }
 
