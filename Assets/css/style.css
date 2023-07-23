@@ -50,6 +50,7 @@ html {
     padding: 8px 18px;
     border-radius: 16px;
     border: none;
+    text-decoration: none;
     background-color: #1e4844;
     color: #fff;
     font-size: 18px;
@@ -71,6 +72,7 @@ html {
 .register {
     color: #b1e53c;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .quantity-slogan {
@@ -282,6 +284,13 @@ html {
 }
 
 /* Css home page */
+.main {
+    background: url('../img/background3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .main__header {
     display: flex;
     justify-content: space-between;
@@ -347,14 +356,34 @@ html {
     height: 400px;
 }
 
-.main__body-text {
-    text-align: center;
+.main__body-target {
+    display: flex;
     width: 15%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main__body-img {
+    margin-bottom: 20px;
+}
+
+.main__body-img img {
+    width: 100px;
+}
+
+.main__body-text {
+    color: #fff;
     font-weight: 600;
 }
 
 .main__footer {
     text-align: center;
+    color: #fff;
+    height: 191px;
+}
+
+.main__footer-text {
+    padding-top: 70px;
     font-size: 26px;
 }
 
