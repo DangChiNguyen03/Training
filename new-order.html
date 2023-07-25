@@ -15,6 +15,7 @@
             <div class="overlay"></div>
             <input type="checkbox" hidden id="checkbox">
             <input type="checkbox" hidden id="form">
+            <input type="checkbox" hidden id="history">
             <div class="form__order-menu">
                 <label for="checkbox"><i class="form__order-menu-icon fa-solid fa-bars"></i></label>
                 <i class="form__order-menu-icon fa-solid fa-plus"></i>
@@ -29,13 +30,17 @@
                         <p class="form__order-profile-number">+84 123456789</p>
                     </div>
                 </div>
-                <div class="form__order-profile-btn form__order-profile-btn--active">
+                <div class="form__order-profile-btn active-order">
+                    <label for="history">
                     <i class="form__order-menu-icon fa-solid fa-plus"></i>
                     <span class="form__order-profile-btn-des">Đơn hàng mới</span>
+                    </label>
                 </div>
-                <div class="form__order-profile-btn">
-                    <i class="form__order-menu-icon fa-regular fa-clock"></i>
-                    <span class="form__order-profile-btn-des">Lịch sử đơn hàng</span>
+                <div class="form__order-profile-btn active-history">
+                    <label for="history">
+                        <i class="form__order-menu-icon fa-regular fa-clock"></i>
+                        <span class="form__order-profile-btn-des">Lịch sử đơn hàng</span>
+                    </label>
                 </div>
             </div>
 
@@ -94,6 +99,30 @@
                     <p class="form__order-main-sum_money">Tổng tiền</p>
                     <button class="form__order-main-order-btn">Đặt đơn</button>
                 </form>
+            </div>
+
+            <div class="form__order-history-form">
+                <div class="form__order-history-header">
+                    <span>Mã đơn hàng</span>
+                </div>
+                <div class="form__order-history-header">
+                    <span>Điểm lấy hàng</span>
+                </div>
+                <div class="form__order-history-header">
+                    <span>Điểm giao hàng</span>
+                </div>
+                <div class="form__order-history-header">
+                    <span>Thời gian tạo</span>
+                </div>
+                <div class="form__order-history-header">
+                    <span>Tổng COD</span>
+                </div>
+                <div class="form__order-history-header">
+                    <span>Tổng phí</span>
+                </div>
+                <div class="form__order-history-header">
+                    <span>Trạng thái</span>
+                </div>
             </div>
         </div>
     </div>
