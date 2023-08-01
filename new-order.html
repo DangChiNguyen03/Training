@@ -17,10 +17,17 @@
             <input type="checkbox" hidden id="form">
             <input type="checkbox" hidden id="history">
             <input type="checkbox" hidden id="income">
+            <input type="checkbox" hidden id="list-in">
+            <input type="checkbox" hidden id="list-out">
+            <input type="checkbox" hidden id="report">
             <div class="form__order-menu">
                 <label for="checkbox"><i class="form__order-menu-icon fa-solid fa-bars"></i></label>
                 <i class="form__order-menu-icon fa-solid fa-plus"></i>
                 <i class="form__order-menu-icon fa-regular fa-clock"></i>
+                <i class="form__order-menu-icon fa-solid fa-chart-simple"></i>
+                <i class="form__order-menu-icon fa-solid fa-calendar"></i>
+                <i class="form__order-menu-icon fa-regular fa-calendar"></i>
+                <i class="form__order-menu-icon fa-solid fa-hand-holding-dollar"></i>
             </div>
 
             <div class="form__order-profile">
@@ -47,6 +54,24 @@
                     <label for="income">
                         <i class="form__order-menu-icon fa-solid fa-chart-simple"></i>
                         <span class="form__order-profile-btn-des">Thống kê thu nhập</span>
+                    </label>
+                </div>
+                <div class="form__order-profile-btn">
+                    <label for="list-in">
+                        <i class="form__order-menu-icon fa-solid fa-calendar"></i>
+                        <span class="form__order-profile-btn-des">Tạo ds nhập hàng</span>
+                    </label>
+                </div>
+                <div class="form__order-profile-btn">
+                    <label for="list-out">
+                        <i class="form__order-menu-icon fa-regular fa-calendar"></i>
+                        <span class="form__order-profile-btn-des">Tạo ds xuất hàng</span>
+                    </label>
+                </div>
+                <div class="form__order-profile-btn">
+                    <label for="report">
+                        <i class="form__order-menu-icon fa-solid fa-hand-holding-dollar"></i>
+                        <span class="form__order-profile-btn-des">Báo cáo công nợ</span>
                     </label>
                 </div>
             </div>
@@ -161,6 +186,147 @@
                         <span>Ngày</span>
                         <hr class="form__order-income-chart-linedays">
                     </div>
+                </div>
+            </div>
+
+            <div class="form__order-list_in">
+                <div class="form__order-list-header">
+                    <h1 class="form__order-list-heading">TẠO DANH SÁCH <br> NHẬP HÀNG</h1>
+                </div>
+                <div class="form__order-list-body">
+                    <div class="form__order-list-information">
+                        <label for="name_deliver" class="form__order-list-label">Tên người giao</label>
+                        <input type="text" id="name_deliver" class="form__order-list-input">
+                        <label for="name_receive" class="form__order-list-label">Tên người nhận</label>
+                        <input type="text" id="name_receive" class="form__order-list-input">
+                        <label for="date_input" class="form__order-list-label">Ngày nhập</label>
+                        <input type="date" id="date_input" class="form__order-list-input">
+                    </div>
+                    <div class="form__order-list-table">
+                        <button class="form__order-list-import_btn">Import</button>
+                        <table class="form__order-list-form" border="1px" cellspacing="0">
+                            <tr>
+                                <td>STT</td>
+                                <td>Mã hàng</td>
+                                <td>Loại hàng hóa</td>
+                                <td>Giá tiền</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="form__order-list-footer">
+                    <button class="form__order-list-btn_out">Xuất danh sách</button>
+                    <button class="form__order-list-btn_add">Thêm dòng +</button>
+                </div>
+            </div>
+
+            <div class="form__order-list_out">
+                <div class="form__order-list-header">
+                    <h1 class="form__order-list-heading">TẠO DANH SÁCH <br> XUẤT HÀNG</h1>
+                </div>
+                <div class="form__order-list-body">
+                    <div class="form__order-list-information">
+                        <label for="name_deliver" class="form__order-list-label">Tên người giao</label>
+                        <input type="text" id="name_deliver" class="form__order-list-input">
+                        <label for="name_receive" class="form__order-list-label">Tên người nhận</label>
+                        <input type="text" id="name_receive" class="form__order-list-input">
+                        <label for="date_input" class="form__order-list-label">Ngày xuất</label>
+                        <input type="date" id="date_input" class="form__order-list-input">
+                    </div>
+                    <div class="form__order-list-table">
+                        <button class="form__order-list-import_btn">Import</button>
+                        <table class="form__order-list-form" border="1px" cellspacing="0">
+                            <tr>
+                                <td>STT</td>
+                                <td>Mã hàng</td>
+                                <td>Loại hàng hóa</td>
+                                <td>Giá tiền</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="form__order-list-footer">
+                    <button class="form__order-list-btn_out">Xuất danh sách</button>
+                    <button class="form__order-list-btn_add">Thêm dòng +</button>
+                </div>
+            </div>
+
+            <div class="form__order-report">
+                <div class="form__order-list-header">
+                    <h1 class="form__order-list-heading">BÁO CÁO CÔNG NỢ</h1>
+                </div>
+                <button class="form__order-list-import_btn">Import</button>
+                <div class="form__order-list-table">
+                    <table class="form__order-list-form" border="1px" cellspacing="0">
+                        <tr>
+                            <td>STT</td>
+                            <td>Mã nhà cung cấp</td>
+                            <td>Tên nhà cung cấp</td>
+                            <td>Số tiền đã trả</td>
+                            <td>Số tiền còn nợ</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="form__order-list-footer">
+                    <button class="form__order-list-btn_out">Xuất danh sách</button>
+                    <button class="form__order-list-btn_add">Thêm dòng +</button>
                 </div>
             </div>
         </div>

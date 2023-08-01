@@ -532,6 +532,36 @@ html, body {
     display: block;
 }
 
+#list-in:checked ~ .form__order-header,
+#list-in:checked ~ .form__order-left,
+#list-in:checked ~ .form__order-right {
+    display: none;
+}
+
+#list-in:checked ~ .form__order-list_in {
+    display: block;
+}
+
+#list-out:checked ~ .form__order-header,
+#list-out:checked ~ .form__order-left,
+#list-out:checked ~ .form__order-right {
+    display: none;
+}
+
+#list-out:checked ~ .form__order-list_out {
+    display: block;
+}
+
+#report:checked ~ .form__order-header,
+#report:checked ~ .form__order-left,
+#report:checked ~ .form__order-right {
+    display: none;
+}
+
+#report:checked ~ .form__order-report {
+    display: block;
+}
+
 .form__order-header {
     position: fixed;
     top: 30px;
@@ -874,6 +904,104 @@ html, body {
     display: block;
     margin: 30px 0;
     border: 1px dashed #ccc;
+}
+
+.form__order-list_in {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: calc(100% - 200px);
+    display: none;
+}
+
+.form__order-list_out {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: calc(100% - 200px);
+    display: none;
+}
+
+.form__order-list-header {
+    text-align: center;
+}
+
+.form__order-list-heading {
+    color: #fff;
+    margin: 20px 0;
+    letter-spacing: 3px;
+}
+
+.form__order-list-body {
+    display: flex;
+}
+
+.form__order-list-information {
+    margin-top: 90px;
+    margin-right: 12px;
+}
+
+.form__order-list-label {
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 40px;
+}
+
+.form__order-list-input {
+    display: block;
+    font-size: 16px;
+    outline: none;
+    padding: 10px 4px;
+    border-radius: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+}
+
+.form__order-list-import_btn {
+    color: #fff;
+    border: none;
+    padding: 8px 40px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    background-color: #0f4b45;
+}
+
+.form__order-list-form {
+    border: 2px solid #ccc;
+}
+
+.form__order-list-form td {
+    width: 260px;
+    height: 100px;
+    text-align: center;
+    background-color: #f3f5f5;
+}
+
+.form__order-list-btn_out {
+    color: #fff;
+    border: none;
+    padding: 18px 12px;
+    border-radius: 10px;
+    background-color: #0f4b45;
+}
+
+.form__order-list-btn_add {
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    float: right;
+    margin: 60px 60px 0 0;
+    background-color: #0f4b45;
+}
+
+.form__order-report {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: calc(100% - 200px);
+    display: none;
 }
 
 /* Css form register-driver and Css form tuyendung */
