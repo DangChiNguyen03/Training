@@ -484,6 +484,7 @@ html, body {
     position: fixed;
     top: 8px;
     left: 220px;
+    z-index: 1;
     font-size: 30px;
     display: none;
 }
@@ -518,6 +519,16 @@ html, body {
 }
 
 #history:checked ~ .form__order-history-form {
+    display: block;
+}
+
+#income:checked ~ .form__order-header,
+#income:checked ~ .form__order-left,
+#income:checked ~ .form__order-right {
+    display: none;
+}
+
+#income:checked ~ .form__order-income {
     display: block;
 }
 
@@ -778,6 +789,93 @@ html, body {
 .form__order-history-header:first-child {
     border-left: 1px solid #e3e0de;
 }
+
+.form__order-income {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    display: none;
+}
+
+.form__order-income-date {
+    margin: 40px;
+}
+
+.form__order-income-time {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.form__order-income-times {
+    height: 30px;
+    width: 170px;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.form__order-income-form {
+    height: 400px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+.form__order-income-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.form__order-income-item {
+    background-color: #fff;
+    font-weight: 600;
+    padding: 12px 122.8px;
+}
+
+.form__order-income-chart-header {
+    margin-left: 12px;
+}
+
+.form__order-income-chart-list {
+    display: inline-flex;
+    float: right;
+}
+
+.color1 {
+    color: #4f9ec7;
+}
+
+.color2 {
+    color: #38b6ff;
+}
+
+.color3 {
+    color: #d17a6f;
+}
+
+.form__order-income-chart-item {
+    margin: 0 12px;
+}
+
+.form__order-income-line {
+    margin-top: 30px;
+    padding-left: 100px;
+}
+
+.form__order-income-line span {
+    color: #4cb6f8;
+    margin-left: -90px;
+}
+
+.form__order-income-chart-linedays {
+    border: 1px dashed #4cb6f8;
+}
+
+.form__order-income-chart-lines {
+    display: block;
+    margin: 30px 0;
+    border: 1px dashed #ccc;
+}
+
 /* Css form register-driver and Css form tuyendung */
 .wrap__driver {
     background-image: url('../img/background-login.jpg');

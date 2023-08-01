@@ -16,6 +16,7 @@
             <input type="checkbox" hidden id="checkbox">
             <input type="checkbox" hidden id="form">
             <input type="checkbox" hidden id="history">
+            <input type="checkbox" hidden id="income">
             <div class="form__order-menu">
                 <label for="checkbox"><i class="form__order-menu-icon fa-solid fa-bars"></i></label>
                 <i class="form__order-menu-icon fa-solid fa-plus"></i>
@@ -30,16 +31,22 @@
                         <p class="form__order-profile-number">+84 123456789</p>
                     </div>
                 </div>
-                <div class="form__order-profile-btn active-order">
+                <div class="form__order-profile-btn">
                     <label for="history">
                     <i class="form__order-menu-icon fa-solid fa-plus"></i>
                     <span class="form__order-profile-btn-des">Đơn hàng mới</span>
                     </label>
                 </div>
-                <div class="form__order-profile-btn active-history">
+                <div class="form__order-profile-btn">
                     <label for="history">
                         <i class="form__order-menu-icon fa-regular fa-clock"></i>
                         <span class="form__order-profile-btn-des">Lịch sử đơn hàng</span>
+                    </label>
+                </div>
+                <div class="form__order-profile-btn">
+                    <label for="income">
+                        <i class="form__order-menu-icon fa-solid fa-chart-simple"></i>
+                        <span class="form__order-profile-btn-des">Thống kê thu nhập</span>
                     </label>
                 </div>
             </div>
@@ -122,6 +129,38 @@
                 </div>
                 <div class="form__order-history-header">
                     <span>Trạng thái</span>
+                </div>
+            </div>
+
+            <div class="form__order-income">
+                <div class="form__order-income-date">
+                    <label for="time" class="form__order-income-time">Thời gian</label>
+                    <input type="date" id="time" class="form__order-income-times">
+                </div>
+                <div class="form__order-income-form">
+                    <ul class="form__order-income-list">
+                        <li class="form__order-income-item">Ngày</li>
+                        <li class="form__order-income-item">Đơn đã giao</li>
+                        <li class="form__order-income-item">Đơn đã hủy</li>
+                        <li class="form__order-income-item">Số tiền nhận được</li>
+                    </ul>
+                </div>
+
+                <div class="form__order-income-chart">
+                    <span class="form__order-income-chart-header">Biểu đồ</span>
+                    <ul class="form__order-income-chart-list">
+                        <li class="form__order-income-chart-item color1">Đơn đã giao</li>
+                        <li class="form__order-income-chart-item color2">Đơn đã hủy</li>
+                        <li class="form__order-income-chart-item color3">Tổng</li>
+                    </ul>
+                    <div class="form__order-income-line">
+                        <hr class="form__order-income-chart-lines">
+                        <hr class="form__order-income-chart-lines">
+                        <hr class="form__order-income-chart-lines">
+                        <hr class="form__order-income-chart-lines">
+                        <span>Ngày</span>
+                        <hr class="form__order-income-chart-linedays">
+                    </div>
                 </div>
             </div>
         </div>
